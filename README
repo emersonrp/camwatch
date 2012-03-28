@@ -1,0 +1,17 @@
+usage: ./camwatch [options] -u url-of-cam-image
+
+Options:
+  -h  Display help
+  -d  Delay time between updates
+  -t  Temp file
+  -i  HTTP Auth info -- username:password
+  -a  Archive images using datestamped filenames
+  -s  directory for file saves
+
+
+Versions through 0.0.7:
+cblack <cblack@null.net> http://wilma.ifas.ufl.edu/~cblack/
+
+Versions 0.1.0 and on:
+R Pickett <emerson@hayseed.net> http://hayseed.net/~emerson/
+

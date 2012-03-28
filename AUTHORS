@@ -1,0 +1,9 @@
+camwatch was originally written by Chris Black <no known email address>.
+
+R Pickett <emerson@hayseed.net>, a regular user of camwatch, discovered
+that Chris had disappeared off the net, to all appearances, and took it
+upon himself to maintain it, starting with version 0.1 in Jan 2002.
+
+camwatch contains motion-detection code cheerfully lifted from motion
+2.6.3 by Jeroen Vreeken <pe1rxq@amsat.org>.
+

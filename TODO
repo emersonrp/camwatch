@@ -1,0 +1,16 @@
+-- Verify image downloaded completely, if not, reload immediately.
+
+-- Add in .camwatch conf file so we don't need all these command-line
+  switches just to get it to work.
+
+-- Possibly roll out imlib in favor of something less-full-featured but
+  more well-written.  Not imlib2.
+
+-- Incorporate motion-detection into archiving routine so we don't
+  fill up our hard drives with hundreds of copies of the same
+  image.
+
+-- Pondering moving to SDL so as to make camwatch portable to Windows
+  since imlib and libcurl are already there.
+
+-- Probably more things.

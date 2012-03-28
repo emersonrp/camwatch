@@ -1,0 +1,56 @@
+.\" Man page for camwatch
+.TH camwatch 1 "camwatch documentation"
+.SH NAME
+camwatch \- views a remote webcam in an X window.
+.SH SYNOPSIS
+.B camwatch
+[\-d delay] [\-t tmpfile] [-i user[:pwd]] [-a] -u http://someserver/path/to/image.jpg
+.SH DESCRIPTION
+.I camwatch
+is a simple X app that updates and refreshes a window displaying an image 
+from a remote web server.
+The full url to the actual image (not the page with the image in it) must 
+be given.
+.SH COMMANDS
+The following keyboard commands may be issued from the camwatch window:
+.TP 8
+.B q or x \fB
+Exits camwatch.
+.TP 8
+.B r \fB
+Forces a refresh of the image from the web server.
+.TP 8
+.B s \fB
+"snapshot" or "save" the current picture with date-based filename.  Same
+mechanism as the -a flag, below, except on-demand.
+.SH OPTIONS
+.TP 8
+.B \-d delay \fB
+The number of seconds to wait between image updates/fetches.
+The default is 60 seconds.
+.TP 8
+.B \-t tmpfile \fB
+The full path/name to use for a tmpfile (holds the image).
+Something like /tmp/cam.jpg. The default is the filename being retrieved.
+.TP 8
+.B \-u url \fB
+The full url of the image to get from the web server. Must point to a 
+viewable image file (a gif or jpeg, not an html page).
+.TP 8
+.B \-i username[:password] \fB
+Specify username and password for HTTP Auth needed for members-only
+cams and the like.  The ':password' part is optional, and the user
+will be prompted for it if it is missing.
+.TP 8
+.B \-a \fB
+Archive the image files using incremental date-based filenames, ie, cam.jpg
+becomes cam-20011225010203.jpg.  Spammy but useful.
+.SH BUGS
+Window does not respond to keyboard commands while it is updating/fetching an 
+image.
+.PP
+HTTP Auth stuff is somewhat fragile and suboptimal.
+.SH AUTHOR
+R Pickett <emerson@hayseed.net>
+.SH WEB
+http://www.hayseed.net/~emerson/camwatch.html

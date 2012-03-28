@@ -1,0 +1,25 @@
+0.2.0:  2002-01-13
+  Fixed broken -s flag for selecting archive dir
+  Fixed bug where window was showing image previous to current
+  Made 's' keystroke save current image without forcing reload
+  Made window auto-resize to the actual size of fetched image
+  Added verify_image;  currently only checks that filesize != 0
+  Added version and filename to window title
+
+0.1.0:  2002-01-08  <Taken over by emerson@hayseed.net>
+  Removed hideous number of #ifdef DEBUG statements.
+  Reworked to use libcurl, in order to add HTTP Auth ability.
+  Added -i option for HTTP Auth Info
+  Added -a option for archiving images
+  Added 's' keystroke to save current pic with datestamped filename
+  Made url be taken as argument to -u flag
+  
+
+0.0.7: Removed verbose printing of http headers from default compile by using 
+    a hideous number of #ifdef DEBUG statements
+  Wrote man page and .spec file for rpm
+0.0.6: Switched to using SIGALRM to trigger updates and fixed various 
+  xlib things
+0.0.3: made http get more standard
+0.0.2: added option handling
+0.0.1: created it

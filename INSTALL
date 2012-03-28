@@ -1,0 +1,15 @@
+
+make
+
+
+Sorry, no more docs other than that.
+I will mention that you need imlib tho.
+
+...and also now libcurl.
+
+imlib -- http://freshmeat.net/projects/imlib/
+libcurl -- http://sourceforge.net/projects/curl/
+
+
+Plans for autoconf etc later on as things get more complicated
+and the like.
